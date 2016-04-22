@@ -1,12 +1,29 @@
-# ZZPSDInputView
-仿支付宝密码输入
+//
+//  ViewController.m
+//  ZZPSDInputViewDemo
+//
+//  Created by 刘威振 on 4/21/16.
+//  Copyright © 2016 LiuWeiZhen. All rights reserved.
+//
 
-使用方法： 
+#import "ViewController.h"
+#import "SecondViewController.h"
 
-```
+#import "ZZPSDInputView.h"
+#import "ZZActionSheet.h"
+
+@interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+
+@end
+
+@implementation ViewController
+
 - (IBAction)test_1:(id)sender {
     ZZActionSheet *sheet        = [[ZZActionSheet alloc] init];
     sheet.dismissWhenTouchBlank = YES;
+    
     ZZPSDInputView *psdView     = [ZZPSDInputView psdInputView];
     psdView.backgroundColor     = [UIColor whiteColor];
     __weak __typeof(self) weakSelf = self;
@@ -25,6 +42,9 @@
     sheet.contentView = psdView;
     [sheet show];
 }
-```
 
-考虑到内容视图应该自定制，即ZZPSDInputView应该是自定制的，不应该写死，此处的密码输入思路供参考。
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+@end

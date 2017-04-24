@@ -32,7 +32,6 @@
         [weakSheet dismiss];
     };
     psdView.finishHandler = ^(NSString *passStr) {
-        // [weakSheet dismiss];
         [weakSheet dismissWithCompletion:^{
             NSLog(@"完成: %@", passStr);
             weakSelf.infoLabel.text = passStr;

@@ -98,7 +98,7 @@
     return 0;
 }
 
-+ (NSInteger)animationStyleTransition {
++ (NSInteger)animationStyleTransform {
     return 1;
 }
 

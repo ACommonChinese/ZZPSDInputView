@@ -15,7 +15,7 @@
 		DA27C1CB1CC88009007AE45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA27C1C91CC88009007AE45B /* LaunchScreen.storyboard */; };
 		DA27C1D61CC880C5007AE45B /* ZZPSDInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA27C1D51CC880C5007AE45B /* ZZPSDInputView.m */; };
 		DA27C1D91CC88406007AE45B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA27C1D81CC88406007AE45B /* SecondViewController.m */; };
-		DA27C2031CC8AD4B007AE45B /* ZZActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA27C2021CC8AD4B007AE45B /* ZZActionSheet.m */; };
+		DA27C2031CC8AD4B007AE45B /* ZZAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = DA27C2021CC8AD4B007AE45B /* ZZAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +33,8 @@
 		DA27C1D51CC880C5007AE45B /* ZZPSDInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPSDInputView.m; sourceTree = "<group>"; };
 		DA27C1D71CC88406007AE45B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		DA27C1D81CC88406007AE45B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		DA27C2011CC8AD4B007AE45B /* ZZActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZActionSheet.h; sourceTree = "<group>"; };
-		DA27C2021CC8AD4B007AE45B /* ZZActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZActionSheet.m; sourceTree = "<group>"; };
+		DA27C2011CC8AD4B007AE45B /* ZZAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAlert.h; sourceTree = "<group>"; };
+		DA27C2021CC8AD4B007AE45B /* ZZAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +96,8 @@
 			children = (
 				DA27C1D41CC880C5007AE45B /* ZZPSDInputView.h */,
 				DA27C1D51CC880C5007AE45B /* ZZPSDInputView.m */,
-				DA27C2011CC8AD4B007AE45B /* ZZActionSheet.h */,
-				DA27C2021CC8AD4B007AE45B /* ZZActionSheet.m */,
+				DA27C2011CC8AD4B007AE45B /* ZZAlert.h */,
+				DA27C2021CC8AD4B007AE45B /* ZZAlert.m */,
 			);
 			path = ZZPSDInputView;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 				DA27C1D61CC880C5007AE45B /* ZZPSDInputView.m in Sources */,
 				DA27C1C01CC88009007AE45B /* AppDelegate.m in Sources */,
 				DA27C1BD1CC88009007AE45B /* main.m in Sources */,
-				DA27C2031CC8AD4B007AE45B /* ZZActionSheet.m in Sources */,
+				DA27C2031CC8AD4B007AE45B /* ZZAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +330,7 @@
 				DA27C1D11CC88009007AE45B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

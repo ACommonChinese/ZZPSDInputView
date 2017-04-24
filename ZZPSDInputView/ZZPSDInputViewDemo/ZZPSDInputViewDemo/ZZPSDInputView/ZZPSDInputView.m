@@ -7,14 +7,31 @@
 //
 
 #import "ZZPSDInputView.h"
+
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
+@interface ZZTextField : UITextField
+
+@end
+
+@implementation ZZTextField
+
+// Just forbid copy & paste https://my.oschina.net/javaeee/blog/522377
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender{
+    NSLog(@"%@", NSStringFromSelector(action));
+    return NO;
+}
+
+@end
+
+// --------------------------------------------------------------------------------
+
 @interface ZZPSDInputView() <UITextFieldDelegate>
 
-@property (nonatomic) UITextField *passField;
+@property (nonatomic) ZZTextField *passField;
 @property (nonatomic) NSMutableArray *psdIndicatorArray;
 @end
 
@@ -61,7 +78,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     CGFloat length = passFieldFrame.size.width / kInputCount;
     passFieldFrame.size.height = length;
     
-    self.passField                        = [[UITextField alloc] initWithFrame:passFieldFrame];
+    self.passField                        = [[ZZTextField alloc] initWithFrame:passFieldFrame];
     self.passField.borderStyle            = UITextBorderStyleNone;
     self.passField.keyboardType           = UIKeyboardTypeNumberPad;
     self.passField.autocapitalizationType = UITextAutocapitalizationTypeNone;

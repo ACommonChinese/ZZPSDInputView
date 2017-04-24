@@ -10,7 +10,7 @@
 #import "SecondViewController.h"
 
 #import "ZZPSDInputView.h"
-#import "ZZActionSheet.h"
+#import "ZZAlert.h"
 
 @interface ViewController ()
 
@@ -21,7 +21,7 @@
 @implementation ViewController
 
 - (IBAction)test_1:(id)sender {
-    ZZActionSheet *sheet        = [[ZZActionSheet alloc] init];
+    ZZAlert *sheet        = [[ZZAlert alloc] init];
     sheet.dismissWhenTouchBlank = YES;
     
     ZZPSDInputView *psdView     = [ZZPSDInputView psdInputView];
@@ -40,6 +40,16 @@
     };
     
     sheet.contentView = psdView;
+    [sheet show];
+}
+
+- (IBAction)test_2:(id)sender {
+    ZZAlert *sheet = [[ZZAlert alloc] init];
+    sheet.animationStyle = ZZAlert.animationStyleTransform;
+    sheet.dismissWhenTouchBlank = YES;
+    UIView *purpleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 400)];
+    purpleView.backgroundColor = [UIColor purpleColor];
+    sheet.contentView = purpleView;
     [sheet show];
 }
 

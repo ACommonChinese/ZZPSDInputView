@@ -35,7 +35,7 @@
     [[[UIApplication sharedApplication] keyWindow] addSubview:self];
     if (self.animationStyle == ZZAlert.animationStyleActionSheet) {
         NSAssert(self.contentView, @"The contentView must not be nil");
-        NSAssert(self.contentView.frame.size.width == self.bounds.size.width, @"The contentView's width must be same as window");
+        NSAssert(self.contentView.frame.size.width == self.bounds.size.width, @"The contentView's width must be same as window, may be you should try animationStyle = LBAlertAnimationStyleTransform?");
         CGRect frame = self.contentView.frame;
         self.originFrame = frame;
         frame.origin.y = self.bounds.size.height;

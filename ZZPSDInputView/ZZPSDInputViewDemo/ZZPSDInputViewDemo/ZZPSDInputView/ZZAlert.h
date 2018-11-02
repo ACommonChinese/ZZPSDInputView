@@ -25,7 +25,7 @@
 @property (class, nonatomic, readonly) NSInteger animationStyleActionSheet;
 @property (class, nonatomic, readonly) NSInteger animationStyleTransform;
 
-// Methods
+// Public APIs
 - (void)show;
 - (void)dismiss;
 - (void)dismissWithCompletion:(dispatch_block_t)completion;
